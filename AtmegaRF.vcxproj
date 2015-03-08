@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FBA40003-60FA-4B19-B7E4-3268D100ED03}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\button.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\hw_timer.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\leds.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\radio.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\Receiver.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\rfa1_os.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\Sender.c" />
+    <ClCompile Include="pg simulation program\anchor node 2\sender\sender\serial.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\button.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\hw_timer.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\leds.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\radio.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\Receiver.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\rfa1_os.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\Sender.c" />
+    <ClCompile Include="pg simulation program\anchor node 3\sender\sender\serial.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\button.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\hw_timer.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\leds.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\Normal with PG.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\PG.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\radio.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\Receiver.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\rfa1_os.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\Sender.c" />
+    <ClCompile Include="pg simulation program\normal node\normal with pg\serial.c" />
+    <ClCompile Include="receiver sensor\receiver\button.c" />
+    <ClCompile Include="receiver sensor\receiver\hw_timer.c" />
+    <ClCompile Include="receiver sensor\receiver\leds.c" />
+    <ClCompile Include="receiver sensor\receiver\radio.c" />
+    <ClCompile Include="receiver sensor\receiver\Receiver.c" />
+    <ClCompile Include="receiver sensor\receiver\rfa1_os.c" />
+    <ClCompile Include="receiver sensor\receiver\serial.c" />
+    <ClCompile Include="sender sensor\sender\button.c" />
+    <ClCompile Include="sender sensor\sender\hw_timer.c" />
+    <ClCompile Include="sender sensor\sender\leds.c" />
+    <ClCompile Include="sender sensor\sender\radio.c" />
+    <ClCompile Include="sender sensor\sender\rfa1_os.c" />
+    <ClCompile Include="sender sensor\sender\Sender.c" />
+    <ClCompile Include="sender sensor\sender\serial.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\app.h" />
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\button.h" />
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\hw_timer.h" />
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\leds.h" />
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\radio.h" />
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\rfa1_os.h" />
+    <ClInclude Include="pg simulation program\anchor node 2\sender\sender\serial.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\app.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\button.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\hw_timer.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\leds.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\radio.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\rfa1_os.h" />
+    <ClInclude Include="pg simulation program\anchor node 3\sender\sender\serial.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\app.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\button.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\hw_timer.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\leds.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\radio.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\rfa1_os.h" />
+    <ClInclude Include="pg simulation program\normal node\normal with pg\serial.h" />
+    <ClInclude Include="receiver sensor\receiver\app.h" />
+    <ClInclude Include="receiver sensor\receiver\button.h" />
+    <ClInclude Include="receiver sensor\receiver\hw_timer.h" />
+    <ClInclude Include="receiver sensor\receiver\leds.h" />
+    <ClInclude Include="receiver sensor\receiver\radio.h" />
+    <ClInclude Include="receiver sensor\receiver\rfa1_os.h" />
+    <ClInclude Include="receiver sensor\receiver\serial.h" />
+    <ClInclude Include="sender sensor\sender\app.h" />
+    <ClInclude Include="sender sensor\sender\button.h" />
+    <ClInclude Include="sender sensor\sender\hw_timer.h" />
+    <ClInclude Include="sender sensor\sender\leds.h" />
+    <ClInclude Include="sender sensor\sender\radio.h" />
+    <ClInclude Include="sender sensor\sender\rfa1_os.h" />
+    <ClInclude Include="sender sensor\sender\serial.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
